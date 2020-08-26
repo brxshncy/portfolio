@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:#999;
+    background:#e3ddd3
+}
+.showcase{
+    width:100%;
+    height:93vh;
+    margin:auto;
+    position:relative;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    overflow:hidden;
+}
+.showcase::after{
+    content:'';
+    position: absolute;
+    background: rgba(0,0,0, 0.6);
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1;
+    box-shadow:inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+.showcase-top{
+    position:relative;
+    z-index:2;
+    border:1px solid #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.showcase-top div{
+    border:1px solid #fff;
+}
+.showcase-content{
+    position:relative;
+    margin:auto;
+    display:flex;
+    z-index:2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:18rem;
+    flex-direction: column;
+}
+.showcase-content h1{
+    color:#fff;
+    font-size:6em;
+    line-height:1.1;
+    font-weight:400;
+    margin:0 0 1rem;
+    letter-spacing:9px;
+}
+.showcase-content h3{
+    color:#fff;
+    font-size:1.8rem;
+    font-weight:200;
+    letter-spacing:3px;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+}
+.tabs{
+    padding-top:1rem;
+    border-bottom:3px;
+    height:90vh;
+    width:100%;
+}
+.tab-1{
+    display:grid;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+    flex-direction:column;
+}
+.tab-1 h1{
+    color:#000;
+    font-size:4rem;
+
+}
+.tab-1 img{
+    width:170px;
+}
+.btn{
+    display:inline-block;
+    color:#000;
+    font-size:1rem;
+    padding: 1rem 1.3rem;
+    background: #fff;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    text-transform:uppercase;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    border-radius:2px;
+    font-weight:600;
+}
+.btn:hover{
+    background-color:#000;
+    opacity:0.9;
+    color:#fff;
+}
+.btn-rd{
+    border-radius:30px;
+}
