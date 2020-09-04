@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap'); 
 :root{
-    --main-text:#000;
+    --main-text:#
     --second-text:#4b5156;
 }
 *{
@@ -101,11 +101,15 @@ p{
     margin-bottom:1.5rem;
     font-size:1.2rem;
 }
-.introduction h3{
+.introduction .about-me{
     margin-bottom:20px;
-    font-size:3rem;
     border-bottom:2px solid #000;
     padding-bottom:20px;
+    display:flex;
+    justify-content: space-between;
+}
+.introduction .about-me h3{
+    font-size:3rem;
 }
 .introduction p{
     letter-spacing:2px;
@@ -205,7 +209,7 @@ p{
 }
 .projects .project-cards .post-preview{
     background:#fff;
-    padding:1px 0 10px 15px;
+    padding:15px 0 10px 15px;
 }
 .projects .project-cards .thumbnails{
     width:100%;
@@ -216,7 +220,9 @@ p{
 
 .projects .project-cards .post-preview h6{
     font-size:1.2rem;
-    line-height:2.6;
+    line-height:1.5;
+    margin-bottom:6px;
+    
 }
 .projects .project-cards .post-preview i{
     font-size:.9rem;
@@ -238,7 +244,31 @@ p{
     font-weight:500;
 }
 .projects .project-cards .post-preview b{
-    
+    color:tomato;
+}
+.post{
+    position:relative;
+}
+.post span{
+    position:absolute;
+    width:0;
+    height:180px;
+    top:0;
+    left:0;
+    color:#fff;
+    background:rgba(0,0,0,0.5);
+   
+}
+.post span p{
+    position:relative;
+    color:#fff;
+    text-align:center;
+    top:50%;
+    left:50%;
+}
+.post .thumbnails:hover ~ span{
+    width:100%;
+   
 }
 @media(max-width:1600px){
     .introduction{
@@ -284,6 +314,9 @@ p{
     .introduction img{
         width:180px
     }
+    .projects .project-header h1{
+        font-size:2.5rem;
+    }
 }
 @media(max-width: 520px){
     .introduction .profile{
@@ -311,4 +344,18 @@ p{
     .skills .card-skills{
         grid-gap:1px;
     }
+}
+@media(max-width:500px){
+    .post{
+        width:95%;
+        margin:auto;
+    }
+    .projects .project-header{
+        height:50px;
+        padding-bottom:70px;
+   }
+   .projects .project-header h1{
+        font-size:1.8em;
+   }
+
 }
