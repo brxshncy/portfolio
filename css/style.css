@@ -76,7 +76,7 @@ p{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    
+    align-items: center;
    
 }
 .introduction img{
@@ -346,9 +346,68 @@ p{
     }
 }
 @media(max-width:500px){
+    .container{
+       width:100%;
+    }
+    .nav-main{
+        width:100%;
+    }
+    .nav-main ul li a{
+        font-size:.9rem;
+    }
+    .introduction{
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        min-height:750px;
+        padding:20px 20px 50px;
+    }
+    .introduction .profile{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin:0;
+        flex-direction: column;
+    }
+    .introduction .info p{
+        font-size:0.9rem;
+    }
+    .skills .title h1{ line-height:1.1}
+    .card-skills ul li{
+        font-size:.8rem;
+        font-weight:500;
+    }
+    .projects .project-header{padding:50px 10px 20px;}
+    .projects .project-header h1{line-height:1.1}
     .post{
         width:95%;
         margin:auto;
+    }
+    .project-cards{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,350px);
+        justify-content:center;
+        grid-gap:20px;
+        margin-top:10px;
+        padding:20px;
+    }
+    .project-cards .post .post-preview h6{
+        font-size:0.9rem;
+    }
+    .project-cards .post .post-preview b{
+        font-size:0.7rem;
+    }
+    .project-cards .post .post-preview i{
+        font-size:0.7rem;
+    }
+    .project-cards .post .post-preview p{
+        font-size:0.8rem;
+    }
+    .project-cards .post .post-preview a{
+        font-size:0.8rem;
+    }
+    .project-cards .post{
+        max-height:1000px;
     }
     .projects .project-header{
         height:50px;
