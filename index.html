@@ -9,16 +9,41 @@
 </head>
 <body>
     <div class="container">
+        <!--<div class="contact-links">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>-->
         <nav class="nav-main">
             <ul class="right-menu">
                 <li><a href="">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Contact</a></li>
             </ul>
         </nav>
         <section class="introduction">
                 <div class="profile"> 
-                    <div>
+                    <div class="img-container">
                         <img src="img/1.jpg" alt="">
                     </div>
                     <div>
@@ -30,7 +55,6 @@
                     <h5>Discover</h5>
                     <div class="about-me">
                         <h3>About me</h3> 
-                      
                     </div>
                     <p>My name is <span class="special-text">Bruce Real</span>, I'm a web developer. During my college days, I developed  
                         several capstone projects such as <span class="special-text">(Management Information System, Inventory System and Enrollment System) </span>as my part-time job. 
@@ -38,6 +62,11 @@
                         I specialize in HTML, CSS, Javascript, Jquery, VueJS, PHP, Laravel framework, and SQL databases. 
                         I'm always passionate about coding, and known to be the hardest worker in the room.
                     </p>
+                    <div class="resume-div"> 
+                        <a href="./RESUME-WEBDEV.pdf" download>
+                                <button class="resume-btn"><i class="far fa-file" style="margin-right:10px;"></i>Download Resume</button>
+                         </a>
+                   </div>
                 </div>
         </section>
         <section class="skills" id="skills">
@@ -51,9 +80,10 @@
                         <h5 class="stack">FRONT END</h5>
                         <li>HTML5</li>
                         <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
                         <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>VueJS</li>
                        
                     </ul>
                 </div>
@@ -79,7 +109,7 @@
         </section>
         <section class="projects" id="projects">
             <div class="project-header">
-                <h1>Some of my Projects</h1>
+                <h1>Some of my personal projects</h1>
             </div>
             <div class="project-cards">
                 <div class="post">
@@ -88,7 +118,7 @@
                         <h6>Netflix Landing Page Clone</h6>
                         <b>Technology:</b> <i>HTML, CSS, Javascript</i>
                         <p>I cloned the landing page of Netflix website.</p>
-                        <b>Link :</b><a href="https://brxshncy.github.io/netfix-clone/" target="_blank" class="link">Click here.</a>
+                        <b>Live Demo :</b><a href="https://brxshncy.github.io/netfix-clone/" target="_blank" class="link">Click here.</a>
                         <br>
                         <br>
                         <b style="-top:10px;">Github Link:</b><a target="_blank" href="https://github.com/brxshncy/netfix-clone.git">Click here.</a>
@@ -96,18 +126,47 @@
                     <span></span>
                 </div>
                 <div class="post">
-                    <img class="thumbnails" src="../img/Screenshot_2.png" alt="">
+                    <img class="thumbnails" src="../img/twitter.png" alt="">
                     <div class="post-preview">
-                        <h6>Microsoft Word Landing Page</h6>
-                        <b>Technology:</b> <i>HTML, CSS, Javascript</i>
-                        <p>I cloned the landing page of Microsoft Word website.</p>
-                        <b>Link :</b><a href="" class="link">Click here.</a>
+                        <h6>Twitter Clone - Full Stack App</h6>
+                        <b>Technology:</b> <i>Laravel, Vue</i>
+                        <p>
+                            My full stack project Twitter Clone App with Twitter Clone like features. I'm still working on responsiveness of this project.
+                            For sample account please login the credential below.
+                            <br>
+                            <br>
+                             <strong>Username</strong> :jane
+                            <br>
+                            <strong>Password: </strong>123
+                        </p>
+                        <b>Live Demo :</b><a href="twitter.bruce-real.com" class="link">Click here.</a>
                         <br>
                         <br>
-                        <b style="-top:10px;">Github Link:</b><a target="_blank" href="https://github.com/brxshncy/msword-clone.git">Click here.</a>
+                        <b style="-top:10px;">Github Link:</b><a target="_blank" href="">Click here.</a>
                     </div>
                     <span></span>
                 </div>
+                <div class="post">
+                    <img class="thumbnails" style="object-fit: cover;"  src="../img/js-bm.png" alt="">
+                    <div class="post-preview">
+                        <h6>Javascript BeatMaker</h6>
+                        <b>Technology:</b> <i>Laravel, Vue</i>
+                        <p>
+                            Javascript BeatMaker I made using HTML,Css,Javascript. Each grid has its own beat.
+                        </p>
+                        <b>Live Demo :</b><a href="https://brxshncy.github.io/js-beatmaker/" class="link">Click here.</a>
+                        <br>
+                        <br>
+                        <b style="-top:10px;">Github Link:</b><a target="_blank" href="">Click here.</a>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="project-header">
+                <h1>Freelance Projects (Capstone)</h1>
+            </div>
+            <div class="project-cards">
                 <div class="post">
                     <img class="thumbnails" src="../img/d9.png" alt="">
                     <div class="post-preview">
@@ -160,6 +219,63 @@
                     </div>
                     <span></span>
                 </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="header-contact">
+               <h1> Contact Me</h1>
+            </div>
+            <div class="contact-form">
+                <div class="form">
+                    <form action="">
+                        <div class="group-form">
+                            <label for="">Name</label>
+                            <input type="text" class="text-form">
+                        </div>
+                        <div class="group-form">
+                            <label for="">Subject</label>
+                            <input type="text" class="text-form">
+                        </div>
+                        <div class="group-form">
+                            <label for="">Email</label>
+                            <input type="text" class="text-form">
+                        </div>
+                        <div class="group-form">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="row-btn">
+                            <button>Send</button>
+                        </div>
+                    </form>
+                    <div class="contact-links">
+                        <div>
+                            <a target="_blank" href="https://www.facebook.com/reconstfu/">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                           
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://twitter.com/brxshncy">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://www.instagram.com/bruxxshancyy/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                        </div>
+                        <div>
+                            <a  target="_blank" href="https://github.com/brxshncy">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
     </div>
